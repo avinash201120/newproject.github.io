@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Universal Registration</title>
+</head>
+
+<body class="login-main">
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-center">
+         <img class="logo" src="images/FFSI-bg.png" style="height: 200px;" "width: 200px;"></a>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="login-page">
+            <!-- Registeration FORM -->
+            <form>
+                <h2>Register</h2>
+                <input type="text" name="name" required placeholder="Name"  onChange={onChangeInput} />
+
+                <input type="email" name="email" required placeholder="Email" onChange={onChangeInput} />
+
+                <input type="password" name="password" required autoComplete="on" placeholder="Password" value=password
+                    onChange={onChangeInput} />
+
+                <div class="row">
+                    <button type="submit">Register</button>
+                    <a href="login.html">Login</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

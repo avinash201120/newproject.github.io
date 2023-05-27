@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  font-weight: 400;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  background-color: #e4bf75ab;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  padding: 48px;
+}
+@media (max-width: 440px) {
+  header {
+    padding: 48px 24px;
+  }
+}
+header > h3 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 8px;
+	text-align: center;
+}
+header > h4 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+	text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 0 48px;
+}
+@media (max-width: 440px) {
+  main {
+    padding: 0 24px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(47, 44, 44);
+  padding: 16px;
+  align-self: center;
+  text-align: center;
+  margin-top: 32px;
+}
+footer a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.label {
+  color: rgba(3, 4, 8, 0.75);
+  font-size: 16px;
+}
+
+small {
+  display: none;
+}
+small.errorOnce {
+  margin-top: 2px;
+}
+.tx1 {
+	margin-top: 10px;
+}
+.form-item input[type="text"],
+.form-item input[type="number"],
+.form-item input[type="email"] {
+  display: block;
+  color: #E2E3E8;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 8px 0;
+  appearance: none;
+  outline: none;
+}
+.form-item i {
+  font-size: 12px;
+  color: rgba(94, 79, 79, 0.767);
+}
+
+.box-item {
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.form-item-double {
+  display: flex;
+}
+.form-item-double .form-item {
+  flex: 1 1 auto;
+}
+.form-item-double .form-item:nth-child(1) {
+  padding-right: 16px;
+}
+.form-item-double .form-item:nth-child(2) {
+  padding-left: 16px;
+}
+
+.form-item-triple {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+.form-item-triple .radio-label {
+  flex: 1 1 auto;
+  text-align: left;
+}
+.form-item-triple .radio-label label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-item-triple .form-item {
+  flex: 3 1 auto;
+  text-align: center;
+  margin: 0;
+}
+.form-item-triple .form-item label, .form-item-triple .form-item input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.submit {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 48px;
+  margin-top: 32px;
+  border: 2px solid #075BB4;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+.submit:hover {
+  background-color: rgb(49, 42, 42);
+  border: 2px solid black;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  margin-top: -600px;
+  margin-left: -400px;
+  background: rgb(187, 103, 103);
+  border-radius: 40%;  
+  animation: shift 20s infinite linear;
+  z-index: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    color: rgb(230, 238, 212);
+  }
+  
+  .student-profile .card {
+    border-radius: 10px;
+  }
+  
+  .student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+  }
+  
+  .student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .student-profile .card p {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .student-profile .table th,
+  .student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+  }
+
+
+@keyframes shift{
+  from{
+    transform: rotate(360deg);
+  }
+}
+    body{  
+        font-family: Calibri;  
+    }  
+    input[type="text"] {  
+        width: 250px;  
+    }  
+    input[type="submit"], input[type="reset"] {  
+        width: 77px;  
+        height: 27px;  
+        position: relative;left: 180px;  
+    }  
+    form{  
+        text-align: center;  
+        font-family: Calibri;  
+        font-size: 20px;  
+        border: 3px solid black;  
+        width: 600px;  
+        margin: 20px auto;  
+    }  
+    td {  
+        padding: 10px;  
+    }  
+    td:first-child {  
+        text-align: right;  
+        font-weight: bold;  
+    }  
+    td:last-child {  
+        text-align: left;  }

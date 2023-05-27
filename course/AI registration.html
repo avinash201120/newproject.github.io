@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Fuel Register</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+           .req {
+                 color: red;
+                } 
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-light">
+
+  <div class="container">
+      <main>
+          <div class="py-5 text-center">
+              <img class="d-block mx-auto mb-4" src="../public/Fuel logo.png" alt="" width="200" height="150">
+              <h2> Python with AI Registeration Form </h2>
+        
+          </div>
+          <div>
+
+              <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                      <div class="col-sm-4">
+                          <label  class="form-label"> First name <span class="req">*</span> </label>
+                          <input type="text" class="form-control" id="firstName" pattern="[A-Za-z]{1,32}" placeholder="" value="" required>
+                          <div id="fnameError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid first name is required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label for="firstName" class="form-label">Middle name </label>
+                          <input type="text" class="form-control" id="middleName" pattern="[A-Za-z]{1,32}" placeholder="" value="" required>
+                          <div id="mnameError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid middle name is required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label for="lastName" class="form-label">Last name <span class="req">*</span></label>
+                          <input type="text" class="form-control" id="lastName" pattern="[A-Za-z]{1,32}" placeholder="" value="" required>
+                          <div id="lnameError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid last name is required.
+                          </div>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="mb-3">
+                      <label class="form-label">Whatsapp Number <span class="req">*</span></label>
+                      <input type="number" class="form-control" id="whatsappNumber" required>
+                      <div id="wpNumberError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                        Enter Your Whatsapp Number.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label"> Alternet Mobile Number <span class="req">*</span></label>
+                      <input  type="number" class="form-control" id="alternetNumber" required>
+                      <div id="alternetNumberError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                        Please Provide Mobile Number.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label  class="form-label">Mother Name</label>
+                      <input type="text" class="form-control" id="motherName" pattern="[A-Za-z]{1,32}" required>
+                      <div id="motherNameError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                        Enter Your Mother Name.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Email address <span class="req">*</span></label>
+                      <input type="email" class="form-control" id="email" pattern="[A-Za-z]{1,32}" aria-describedby="emailAddress" required>
+                      <div id="emailHelp" class="form-text"></div>
+                      <div class="invalid-feedback">
+                        Please provide valid Emailid.
+                    </div>
+                  </div>
+
+                  <label class="form-label">Gender <span class="req">*</span></label>
+                  <div class="form-check" >
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id=" male"  checked>
+                      <div id="maleerror" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                       Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id=" female" checked>
+                      <div id="femaleerror" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                      </label>
+                    </div>
+                     <br>
+
+                      <div class="row g-3">
+                      <div class="col-sm-6">    
+                      <label for="birthday">Date of Birth <span class="req">*</span></label> 
+                          <input type="date" id="birthday" name="birthday" required>
+                          <div id="birthDateError" class="form-text"></div>
+                           <div class="invalid-feedback">
+                        Please provide valid Date of Birth.
+                    </div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6">
+                      <label for="age">Age </label>
+                      <input type="text" id="age">
+                      <div id="ageError" class="form-text"></div>
+                    </div>
+                  </div>
+                   <br>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Full address <span class="req">*</span></label>
+                      <input type="email" class="form-control" id="address" aria-describedby="fullAddress" required>
+                      <div id="addressError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                              Valid Full address required.
+                          </div>
+                  </div>
+
+                  <div class="row g-3">
+                      <div class="col-sm-4">
+                          <label for="Hometown" class="form-label">Hometown</label>
+                          <input type="text" class="form-control" id="homeTown" pattern="[A-Za-z]{1,32}" placeholder="" value="" required>
+                          <div id="hometownError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid Hometown name is required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label for="city" class="form-label">State</label>
+                          <input type="text" class="form-control" id="state" placeholder="" value="" required>
+                          <div id="stateError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid State name is required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label for="District" class="form-label">District</label>
+                          <input type="text" class="form-control" id="district" placeholder="" value="" required>
+                          <div id="districtError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Valid District name is required.
+                          </div>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row g-3">
+                    <div class="col-sm-4">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="" value="" required>
+                        <div id="cityError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                            Valid city name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label for="" class="form-label">Pincode</label>
+                        <input type="number" class="form-control" id="pinCode" placeholder="" value="" required>
+                        <div id="pinError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                            Valid pincode is required.
+                        </div>
+                    </div>
+
+                  <div class="row g-3">
+                      <div class="col-sm-4">
+                          <label class="form-label">Category <span class="req">*</span></label>
+                      <select class="form-select" id="category" aria-label="Default select example" required>
+                        <div id="categoryError" class="form-text"></div> 
+                        <option value="">-- Choose an option here --</option>
+                          <option value="1">General/Open </option>
+                          <option value="2">OBC </option>
+                          <option value="3">SC/ST</option>
+                          <option value="4">NT/VJNT</option>  
+                          <option value="5">SBC</option>  
+                          <option value="6">EWS</option>  
+                          <option value="7">Other</option>    
+                        </select>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label class="form-label">Father Occupation <span class="req">*</span></label>
+                      <select class="form-select" id="fatherOccupation"aria-label="Default select example" required>
+                        <div id="fatherError" class="form-text"></div> 
+                        <option value="">-- Choose an option here --</option> 
+                          <option value="1">Agriculture(Farmer) </option>
+                          <option value="2">Labour/Worker </option>
+                          <option value="3">Teacher</option>
+                          <option value="4">Small Business</option>  
+                          <option value="5">Government Servant </option>  
+                          <option value="6">Service</option>  
+                          <option value="7">Police Service</option>  
+                          <option value="8">Other</option>    
+                        </select>
+                      </div>
+
+          
+                          <div class="col-sm-4">
+                              <label class="form-label">Annual Family Income <span class="req">*</span></label>
+                          <select class="form-select" id="annualIncome"aria-label="Default select example" required>
+                            <div id="annualError" class="form-text"></div> 
+                            <option value="">-- Choose an option here --</option>
+                              <option value="1">Below 1,50,000 </option>
+                              <option value="2">Between 1,50,000 to 2,00,000 </option>
+                              <option value="3">Between 2,00,000 to 3,00,000</option>
+                              <option value="4">Above 3,00,000</option>     
+                            </select>
+                          </div>
+                  </div> <br>
+
+                      <div class="mb-3">
+                          <label  class="form-label">University Name <span class="req">*</span></label>
+                          <input type="text" class="form-control" id="universityName" pattern="[A-Za-z]{1,32}" required>
+                          <div id="universitynameError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please provide valid University Name.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label">PRN <span class="req">*</span></label>
+                        <input type="Number" class="form-control" id="prn" required>
+                        <div id="prnError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          Please provide valid PRN Number.
+                      </div>
+                    </div>
+
+
+                      <div class="col-sm-8">
+                          <label  class="form-label">College Name <span class="req">*</span></label>
+                          <input type="text" class="form-control" id="collegeName" pattern="[A-Za-z]{1,32}" required>
+                          <div id="collegenameError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please provide College Name.
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label  class="form-label">College City <span class="req">*</span></label>
+                          <input type="text" class="form-control" id="collegeCity" pattern="[A-Za-z]{1,32}" required>
+                          <div id="collegecityError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please provide College City.
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                          <label for="" class="form-label">Aadhar Card No <span class="req">*</span></label>
+                          <input type="number" class="form-control" id="adharCardNo" placeholder="Enter your adhar no" value="" required>
+                          <div id="adharCardNoError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              Aadhar no required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                          <label for="formFile" class="form-label">Upload Your Aadhar Card <span class="req">*</span></label>
+                          <input class="form-control" type="file" id="adharFile" required>
+                          <div id="adharFileError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                           Upload Your Aadhar Card.
+                        </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label for="" class="form-label">Pan Card No<span class="req">*</span></label>
+                          <input type="number" class="form-control" id="panCardNo" placeholder="Enter your pan no" value="" required>
+                          <div id="panCardNoError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                              PAN no required.
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6">
+                          <label for="formFile" class="form-label">Upload Your Pan Card<span class="req">*</span> </label>
+                          <input class="form-control" type="file"  id="panFile" required>
+                          <div id="panFileError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Upload Your Pan Card 
+                        </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label class="form-label">LinkedIn Mail ID <span class="req">*</span></label>
+                          <input type="email" class="form-control" id="linkedinMail" aria-describedby="emailHelp" required>
+                          <div id="linkedinMailError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please Provide Valid LinkedIn Mail ID.
+                        </div>
+                      </div>
+
+                        <div class="col-sm-6">
+                          <label for="formFile" class="form-label">Upload Your Passport Size Photo</label>
+                          <input class="form-control" type="file" id="photoFile" required>
+                          <div id="photoFileError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please Upload Your Passport Size Photo.
+                        </div>
+                        </div>
+
+                        <label class="form-label">Are You Married?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="married">
+                            <div id="marriedError" class="form-text"></div>
+                             <div id="photoFileError" class="form-text"></div><label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="unmarried" checked>
+                            <div id="unmarriedError" class="form-text"></div>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              No
+                            </label>
+                          </div>
+                          <br>
+                          <label class="form-label">Have you scored 60% above in 10th? </label>
+                       <div class="form-check" >
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="above60" checked>
+                      <div id="above60Error" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                       Yes 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="notAbove60" checked>
+                      <div id="notabove60Error" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                      </label>
+                    </div>
+
+                    <div class="col-sm-3">
+                      <label for="" class="form-label">10th Percentage</label>
+                      <input type="text" class="form-control" id="10thPercentage" placeholder="" value="" required>
+                      <div id="10thPercentageError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                          10th Percentage.
+                      </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                      <label for="" class="form-label">10th Passout Year </label>
+                      <input type="text" class="form-control" id="10thPassout" placeholder="" value="" required>
+                      <div id="10thpassoutError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                          10th passout year.
+                      </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                      <label for="formFile" class="form-label">Upload Your 10th Marksheet</label>
+                      <input class="form-control" type="file" id="10thMarksheetFile" required>
+                      <div id="10thMarksheetFileError" class="form-text"></div>
+                      <div class="invalid-feedback">
+                        Please Upload Your 10th Marksheet.
+                    </div>
+                    </div>
+
+                    <label class="form-label">Have you scored 60% in 12th/Diploma ? </label>
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id=" diploma60" checked>
+                        <div id="diploma60Error" class="form-text"></div>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         Yes 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id=" notdiploma60" checked>
+                        <div id="notdiploma60Error" class="form-text"></div>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                        </label>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <label for="" class="form-label">12th/Diploma Percentage</label>
+                        <input type="text" class="form-control" id="12thDiplomaPercentage" placeholder="" value="" required>
+                        <div id="12thDiplomaPercentageError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          12th/Diploma Percentage.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="" class="form-label">12th/Diploma Pass out Year </label>
+                        <input type="text" class="form-control" id="12thDiplomaPassout" placeholder="" value="" required>
+                        <div id="12thDiplomaPassoutError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          12th/Diploma passout year.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="formFile" class="form-label">Upload Your 12th/Diploma Marksheet</label>
+                        <input class="form-control" type="file" id="12thDiplomaMarksheetFile" required>
+                        <div id="12thDiplomaMarksheetFileError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                         Please Upload Your 12th/Diploma Marksheet
+                        </div>
+                      </div>
+
+                      <label class="form-label">Have you scored 50% in Graduation ? </label>
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id=" graduation60" checkec>
+                        <div id="graduation60Error" class="form-text"></div>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                         Yes 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id=" notgraduation60" checked>
+                        <div id="notgraduation60Error" class="form-text"></div>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        No
+                        </label>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <label for="" class="form-label">Graduation CGPA</label>
+                        <input type="text" class="form-control" id="GraduationCgpa" placeholder="" value="" required>
+                        <div id="GraduationCgpaError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          Graduation CGPA.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <label for="" class="form-label">CGPA in percentage </label>
+                        <input type="text" class="form-control" id="cgpaInPercentage" placeholder="" value="" required>
+                        <div id="cgpaInPercentageError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          CGPA in percentage .
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="formFile" class="form-label">Upload Your Graduation Marksheet</label>
+                        <input class="form-control" type="file" id="graduationMarksheetFile" required>
+                        <div id="graduationMarksheetFileError" class="form-text"></div>
+                        <div class="invalid-feedback">
+                          Please Upload Your Graduation Marksheet
+                         </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label class="form-label">Graduation Qualification</label>
+                      <select class="form-select" id="graduationQualification" aria-label="Default select example" required>
+                        <div id="graduationQualificationError" class="form-text"></div>
+                        <option value="">-- Choose an option here --</option>
+                          <option value="1">BE-Computer Science </option>
+                          <option value="2">BE-Information Technolgy</option>
+                          <option value="3">BE-Mechanical</option>
+                          <option value="4">BE-Electrical</option>
+                          <option value="5">BE-Electronics and Telecommunication</option>
+                          <option value="6">BE-Civil</option>
+                          <option value="7">BE-Chemical</option>
+                          <option value="8">ME/M-TECH</option>
+                          <option value="9">BCA</option>
+                          <option value="10">BCS</option>
+                          <option value="11">BSC</option>
+                          <option value="11">MCA</option>
+                        </select>
+                        <div class="invalid-feedback">
+                         Select Valid Qualification.
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                          <label class="form-label">Pursuing Year</label>
+                      <select class="form-select" id="pursuingYear"aria-label="Default select example" required>
+                        <div id="pursuingYearError" class="form-text"></div>
+                        <option value="">-- Choose an option here --</option>
+                          <option selected>Pursuing Year</option>
+                          <option value="1">Third Year </option>
+                          <option value="2">Final Year </option>
+                          <option value="3">Passout</option>  
+                        </select>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                          <label for="" class="form-label">Graduation passing year </label>
+                          <input type="text" class="form-control" id="graduationYear" placeholder="" value="" required>
+                          <div id="graduationYearError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Graduation passing year
+                          </div>
+                      </div>
+
+                      <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Mini Project Details</label>
+                          <textarea class="form-control" id="miniProject" rows="3" required></textarea>
+                          <div id="graduationYearError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"> Major Project Details</label>
+                          <textarea class="form-control" id="majorProject" rows="3" required></textarea>
+                          <div id="majorProjectError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"> Have you done any certifications in JAVA ( if yes Mention details )</label>
+                          <textarea class="form-control" id="javaCertificate" rows="3" required></textarea>
+                          <div id="javaCertificateError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"> Research Paper Details (if any) </label>
+                          <textarea class="form-control" id="researchPaper" rows="3" required></textarea>
+                          <div id="researchPaperError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                                Please enter a message in the textarea.
+                              </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"> Why do you want to participate in this program ? ( 150 words max ) </label>
+                          <textarea class="form-control" id="wantProgram" rows="3" required></textarea>
+                          <div id="wantProgramError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+                         
+
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label"> What makes you fit for this program (150 words max) </label>
+                          <textarea class="form-control" id="fitProgram" rows="3" required></textarea>
+                          <div id="fitProgramError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Which is your dream Company? (Mention any 2 ) </label>
+                          <textarea class="form-control" id="dreamCompany" rows="3" required></textarea>
+                          <div id="dreamCompanyError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                          <label class="form-label">Area of Interest/Sector to work in ?</label>
+                      <select class="form-select" id="areaOfInterest" aria-label="Default select example" required>
+                        <div id="areaOfInterestError" class="form-text"></div>
+                        <option value="">-- Choose an option here --</option>
+                          <option value="1">IT/ITES (Software) </option>
+                          <option value="2">Accountancy,Banking and Finance</option>
+                          <option value="3">Engineering and Manufacturing </option>
+                          <option value="4">Transport and Logistics</option>
+                          <option value="5">Hospitality and Events Management</option>
+                          <option value="6">Recruitment and <HR></HR></option>
+                          <option value="7">Teacher Training and Education\</option>
+                          <option value="8">Science and Pharmaceuticals</option>
+                          <option value="9">Property and Construction Real Estate</option>
+                          <option value="10">Higher Education (MBA/PhD)</option>
+                          <option value="11">Abroad Education (MBA/MS)</option>
+                          <option value="11">Other</option>
+                        </select>
+                      </div>
+                      <br>
+                      <div class="col-sm-6">
+                          <label for=""> <b> SUPERSET INFORMATION : </b></label>
+                          <br> <br>
+                          Register on SuperSet platform by clicking <a href="https://joinsuperset.com"> Superset Registration </a> <br> <br> Superset Id: <br>
+                              <input type="text" class = "form-control""SuperSetID" id="superSetID" required>
+                              <div id="superSetIDError" class="form-text"></div>
+                              <div class="invalid-feedback">
+                                Please Share valid Superset ID.
+                              </div>
+                                 <br> Share the email id used to register on Superset
+                          <input type="email" class = "form-control""SuperSet" id="superSetEmail" required>
+                          <div id="superSetEmailError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please Share valid email ID.
+                          </div>
+                             
+                      </div>
+                      <br>
+                      <div class="col-sm-6">
+                          <label for="formFile" class="form-label">Upload Your Updated Resume</label>
+                          <input class="form-control" type="file" id="resume" required>
+                          <div id="resumeError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Please Upload Your Updated Resume .
+                          </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-3">
+                          <label class="form-label">Batch Start Date </label>
+                      <select class="form-select" id="batchDate"aria-label="Default select example" required >
+                        <div id="batchDateError" class="form-text"></div>
+                        <option value="">-- Choose an option here --</option>
+                          <option value="1">01 Jan 2023 </optio>
+                          <option value="2">01 Feb 2023 </option>
+                          <option value="2">01 March 2023 </option>
+                          <option value="2">01 April 2023 </option>
+                        </select>
+                      </div>
+                      <br>
+
+                      <div class="col-sm-6">
+                        Please Add your LinkedIn profile URL:
+                           
+                        <input type="text" class = "form-control""SuperSetID" id="linkedinurl" required>
+                        <div id="linkedinurlError" class="form-text"></div>
+                      </div>
+                       <br>
+
+                        <label class="form-label">Have You Joined FUEL Alumini groups Please ensure you have LinkedIn in Profile and join our Linkdn in Groups. </label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                          <div id="flexCheckDefaultError" class="form-text"></div>
+                          <label class="form-check-label" for="flexCheckDefault">
+                              LinkedIn : <a href=""> https://www.linkdin.com/groups/9177915/ </a>
+                          </label>
+                          <div class="invalid-feedback">
+                            Please ensure you have LinkedIn in Profile and join our LinkedIn in Groups.
+                          </div>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                          <div id="flexCheckCheckedError" class="form-text"></div>
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Facebook :  <a href=""> https://www.linkdin.com/groups/9177915/ </a>
+                          </label>
+                          <div class="invalid-feedback">
+                            Please ensure you have LinkedIn in Profile and join our LinkedIn in Groups.
+                          </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-6">
+                          <label for="formFile" class="form-label">Upload Vaccine Certificate</label>
+                          <input class="form-control" type="file" id="vaccine" required>
+                          <div id="vaccineError" class="form-text"></div>
+                          <div class="invalid-feedback">
+                            Upload Your Valid Vaccine Certificate.
+                          </div>
+                        </div>
+                        <br>
+                        <label class="form-label">Have you done Before any Training with FUEL Orgnization </label>
+                       <div class="form-check" >
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id=" training" checked>
+                      <div id="trainingError" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                       Yes 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id=" notraining" checked>
+                      <div id="nottrainingError" class="form-text"></div>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                      </label>
+                    </div> <br>
+
+                     
+                    <div class="col-12">
+                      <div class="form-check">
+                         
+                        
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <div id="invalidCheckError" class="form-text"></div>
+                        <b>I hereby declare that the information furnished above is true, complete and correct to
+                          the best of my knowledge and belief.
+                          I understand that in the event of my information being
+                          found false or incorrect at any stage, my candidature / appointment shall be liable to cancellation / termination without notice.
+                        </b>
+                        <label class="form-check-label" for="invalidCheck">
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    </div> <br>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Submit</button> <hr> <br>
+                    </div>
+                  </form>
+              </form>
+          </div>
+  </div>
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="form-validation.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+</body>
+
+</html>
